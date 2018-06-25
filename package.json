@@ -5,12 +5,29 @@
   "main": "src/index.ts",
   "repository": "https://github.com/DakshMiglani/s.dak.sh-server.git",
   "author": "Daksh Miglani <hello@dak.sh>",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts"
+  },
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@types/mongoose": "^5.0.18",
     "@types/node": "^10.3.5",
+    "@types/shortid": "^0.0.29",
+    "@types/validator": "^9.4.1",
+    "ts-node": "^7.0.0",
     "tslint": "^5.10.0",
     "tslint-config-airbnb": "^5.9.2",
     "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "apollo-errors": "^1.9.0",
+    "graphql-yoga": "^1.14.10",
+    "mongoose": "^5.1.6",
+    "reflect-metadata": "^0.1.12",
+    "shortid": "^2.2.8",
+    "typegoose": "^5.2.1",
+    "validator": "^10.4.0"
   }
 }
