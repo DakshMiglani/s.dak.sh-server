@@ -1,12 +1,12 @@
 type Query {
-	getDetails(uuid: ID!): DetailsResponse!
+	getDetails(uuid: ID!): URL!
 }
 
 type Mutation {
-	create(redirectTo: String!, createdBy: String): String!
+	create(redirectTo: String!, createdBy: String): URL!
 }
 
-type DetailsResponse {
+type URL {
 	uuid: ID!
 	redirectTo: String!
 	views: Int!

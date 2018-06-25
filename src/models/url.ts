@@ -1,6 +1,9 @@
-import { prop, Typegoose } from 'typegoose';
+import { prop, Typegoose, post } from 'typegoose';
 import * as shortid from 'shortid';
 
+@post<URL>('findOne', async function (result) {
+	await result.update({ views: result.views + 1 });
+})
 class URL extends Typegoose {
 	@prop({ required: true, unique: true, default: shortid.generate })
 		uuid: string;
