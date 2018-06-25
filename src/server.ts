@@ -1,6 +1,7 @@
 import { GraphQLServer } from 'graphql-yoga';
 import { formatError } from 'apollo-errors';
 import { join } from 'path';
+import * as helmet from 'helmet';
 import { Resolvers as resolvers } from './graphql/resolvers';
 import router from './routes';
 
@@ -17,3 +18,4 @@ export const Server = new GraphQLServer({
 });
 
 Server.express.use('/', router);
+Server.express.use(helmet());
