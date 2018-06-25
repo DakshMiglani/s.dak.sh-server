@@ -1,0 +1,16 @@
+{
+  "name": "s.dak.sh-server",
+  "version": "0.0.0",
+  "description": "GraphQL Based URL Shortener",
+  "main": "src/index.ts",
+  "repository": "https://github.com/DakshMiglani/s.dak.sh-server.git",
+  "author": "Daksh Miglani <hello@dak.sh>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^10.3.5",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "typescript": "^2.9.2"
+  }
+}
