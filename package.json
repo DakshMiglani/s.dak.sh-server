@@ -24,15 +24,13 @@
     "rimraf": "^2.6.2",
     "ts-node": "^7.0.0",
     "tslint": "^5.10.0",
-    "tslint-config-airbnb": "^5.9.2",
+    "tslint-config-prettier": "^1.14.0",
     "typescript": "^2.9.2"
   },
   "dependencies": {
     "@types/express-rate-limit": "^2.9.3",
-    "apollo-errors": "^1.9.0",
     "express": "^4.16.3",
     "express-rate-limit": "^2.11.0",
-    "graphql-yoga": "^1.14.10",
     "helmet": "^3.12.1",
     "mongoose": "^5.1.6",
     "reflect-metadata": "^0.1.12",
