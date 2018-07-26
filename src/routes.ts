@@ -1,6 +1,6 @@
 import { Router, Response, Request } from "express";
 import { isURL } from "validator";
-import { homeURL } from "./constants";
+import { homeURL, shortURL } from "./constants";
 import * as shortid from "shortid";
 import { Model } from "./models/url";
 const router = Router();
@@ -38,7 +38,7 @@ router.post("/create-url", async (req: Request, res: Response) => {
 
     try {
       await URL.save();
-      res.json({ url: `${homeURL}/${URL.uuid}` });
+      res.json({ url: `${shortURL}/${URL.uuid}` });
     } catch (e) {
       res.json({
         url: null,
