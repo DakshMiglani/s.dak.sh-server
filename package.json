@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@types/express-rate-limit": "^2.9.3",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "express-rate-limit": "^2.11.0",
     "helmet": "^3.12.1",
