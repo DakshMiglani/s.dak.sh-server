@@ -3,12 +3,17 @@ import * as http from "http";
 import * as helmet from "helmet";
 import * as RateLimit from "express-rate-limit";
 import * as BodyParser from "body-parser";
+import * as cors from 'cors';
 import router from "./routes";
 
 const app = express();
 const opts = { port: 4000 };
 const Server = http.createServer(app);
 
+app.use(cors({
+	origin: ["http://localhost:3000", "https://short.dak.sh"],
+	methods: ["GET", "POST"],
+}));
 app.use(helmet());
 app.use(BodyParser.json());
 app.use(

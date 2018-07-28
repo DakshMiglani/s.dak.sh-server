@@ -1,6 +1,8 @@
 import { prop, Typegoose, post } from "typegoose";
 import * as shortid from "shortid";
 
+shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-');
+
 @post<URL>("findOne", async function(result) {
   await result.update({ views: result.views + 1 });
 })
